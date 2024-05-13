@@ -1,0 +1,16 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - cf_sms
+  - --region=us-central1
+  - --allow-unauthenticated
+  - --source=https://source.developers.google.com/projects/bigquery-fisrtsteps/repos/github_alexandreexteves_cloud-function-stack/moveable-aliases/master/paths/cf_sms
+  - --trigger-http
+  - --runtime=python39
+  - --memory=512MB
+  - --project=bigquery-fisrtsteps
+  - --entry-point=hello_pubsub
+  - --update-labels=course=cloud_functions,env=dev,layer=raw
