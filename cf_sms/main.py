@@ -11,7 +11,7 @@ def hello_pubsub(event, context):
 
     client = secretmanager.SecretManagerServiceClient()
     TWILIO_ACCOUNT_SID_secret = "TWILIO_ACCOUNT_SID"
-    TWILIO_AUTH_TOKEN_secret = "TWILIO_AUTH_TOKEN"
+    TWILIO_AUTH_TOKEN_secret = "TWILIO_ACCOUNT_TOKEN"
     project_id = 'bigquery-firststeps'
 
     TWILIO_ACCOUNT_SID_request = {"name": f"projects/{project_id}/secrets/{TWILIO_ACCOUNT_SID_secret}/versions/latest"}
