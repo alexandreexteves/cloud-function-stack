@@ -7,7 +7,7 @@ steps:
   - cf_cloud_build
   - --region=us-central1
   - --allow-unauthenticated
-  - --source=https://source.developers.google.com/projects/bigquery-fisrtsteps/repos/github_alexandreexteves_cloud-function-stack/moveable-aliases/main/paths/cf_cloud_build
+  - --source=https://source.developers.google.com/projects/bigquery-fisrtsteps/repos/github_alexandreexteves_cloud-function-stack/moveable-aliases/master/paths/cf_cloud_build
   - --trigger-http
   - --runtime=python39
   - --memory=256MB
